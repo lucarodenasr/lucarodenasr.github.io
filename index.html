@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="Img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <p>Hola</p>
+    <main>
+        <section id="inicio">
+            <h1>Luca Ródenas</h1>
+            <h2 class="yellow">Software Developer</h2>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div id="opciones">
+                <button onclick="selectProjects('All')">Todos</button>
+                <button onclick="selectProjects('JavaScript')">JavaScript</button>
+                <button onclick="selectProjects('React')">React</button>
+                <button onclick="selectProjects('Python')">Python</button>
+            </div>
+            <div id="container-proyectos">
+                <div class="proyecto React">
+                    <img src="Img/logo.png" alt="Captura del proyecto 1">
+                    <h3>MANNAD</h3>
+                    <p>Proyecto de gestión</p>
+                    <a href="https://mi-proyecto-enlinea.com" target="_blank">🌐 Ver demo</a>
+                    <a href="https://github.com/miusuario/proyecto1" target="_blank">💻 Ver código</a>
+                </div>
+                <div class="proyecto Python">
+                    <img src="Img/logo.png" alt="Captura del proyecto 1">
+                    <h3>Automatizador</h3>
+                    <p>Automatizador de eleminacion de archivos usando Python</p>
+                    <a href="https://mi-proyecto-enlinea.com" target="_blank">🌐 Ver demo</a>
+                    <a href="https://github.com/miusuario/proyecto1" target="_blank">💻 Ver código</a>
+                </div>
+                <div class="proyecto JavaScript">
+                    <img src="Img/logo.png" alt="Captura del proyecto 1">
+                    <h3>Ajedrez</h3>
+                    <p>Web para jugar Ajedrez en linea</p>
+                    <a href="https://mi-proyecto-enlinea.com" target="_blank">🌐 Ver demo</a>
+                    <a href="https://github.com/miusuario/proyecto1" target="_blank">💻 Ver código</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <a href="">lucarodenas7@gmail.com</a>
+        </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

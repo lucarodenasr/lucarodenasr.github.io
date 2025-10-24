@@ -1,57 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="Styles/style.css">
-    <title>Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <title>Luca Ródenas</title>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header>
+      <div class="container">
+        <div>
+          <h1>Luca Ródenas</h1>
+          <p class="yellow">Software Developer</p>
+        </div>
+        <nav>
+          <ol>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ol>
+        </nav>
+      </div>
+    </header>
     <main>
-        <section id="inicio">
-            <h1>Luca Ródenas</h1>
-            <h2 class="yellow">Software Developer</h2>
-        </section>
-
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <div id="opciones">
-                <button onclick="selectProjects('All')">Todos</button>
-                <button onclick="selectProjects('JavaScript')">JavaScript</button>
-                <button onclick="selectProjects('React')">React</button>
-                <button onclick="selectProjects('Python')">Python</button>
+      <section id="home" class="active">
+        <p>
+          Desarrollador Informático apasionado por la creación de soluciones y
+          el desarrollo de software web y multiplataforma. Disciplinado y en
+          aprendizaje continuo, capaz de adaptarme rapidamente a nuevas
+          tecnologías
+        </p>
+        <h3>SKILLS</h3>
+        <hr>
+        <p>Lenguajes de programación: Java, JavaScript, Python, PHP, C#</p>
+        <p>Frameworks: Spring Boot, Angular, Django</p>
+        <p>Desarrollo Web: HTML, CSS, React</p>
+        <p>Bases de Datos: MySQL, PostgreSQL, Firebase</p>
+        <p>Control de versiones: Git</p>
+      </section>
+      <section id="proyectos">
+        <div id="listaProyectos">
+          <h2>Proyectos</h2>
+          <hr />
+          <ul>
+            <hr />
+            <li>
+              <a onclick="showProject('mannad')"
+                ><h2>MANNAD</h2>
+                <p>React Native</p></a
+              >
+            </li>
+            <hr />
+            <li>
+              <a onclick="showProject('auto')"
+                ><h2>Automatizador</h2>
+                <p>Python</p></a
+              >
+            </li>
+            <hr />
+            <li>
+              <a onclick="showProject('ajedrez')"
+                ><h2>Ajedrez</h2>
+                <p>JavaScript</p></a
+              >
+            </li>
+            <hr />
+          </ul>
+        </div>
+        <div class="container">
+          <p id="dateProyecto">2025</p>
+          <img class="active" id="imgProyecto" src="Img/mannad.png" alt="" />
+          <p id="pProyecto"></p>
+        </div>
+      </section>
+      <section id="contacto">
+        <div>
+          <h2>Contacto</h2>
+          <hr />
+          <div class="container">
+            <div>
+              <h3>Mail</h3>
+              <a
+                class="dashable"
+                href="mailto:lucarodenas7@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                >lucarodenas7@gmail.com</a
+              >
             </div>
-            <div id="container-proyectos">
-                <div class="proyecto React">
-                    <img src="Img/logo.png" alt="Captura del proyecto 1">
-                    <h3>MANNAD</h3>
-                    <p>Proyecto de gestión</p>
-                    <a href="https://mi-proyecto-enlinea.com" target="_blank">🌐 Ver demo</a>
-                    <a href="https://github.com/miusuario/proyecto1" target="_blank">💻 Ver código</a>
-                </div>
-                <div class="proyecto Python">
-                    <img src="Img/logo.png" alt="Captura del proyecto 1">
-                    <h3>Automatizador</h3>
-                    <p>Automatizador archivos usando Python</p>
-                    <a href="https://mi-proyecto-enlinea.com" target="_blank">🌐 Ver demo</a>
-                    <a href="https://github.com/miusuario/proyecto1" target="_blank">💻 Ver código</a>
-                </div>
-                <div class="proyecto JavaScript">
-                    <img src="Img/logo.png" alt="Captura del proyecto 1">
-                    <h3>Ajedrez</h3>
-                    <p>Web para jugar Ajedrez en linea</p>
-                    <a href="https://mi-proyecto-enlinea.com" target="_blank">🌐 Ver demo</a>
-                    <a href="https://github.com/miusuario/proyecto1" target="_blank">💻 Ver código</a>
-                </div>
+            <div>
+              <h3>Linkedin</h3>
+              <a
+                class="dashable"
+                href="https://www.linkedin.com/in/lucarodenas/"
+                target="_blank"
+                >lucarodenas</a
+              >
             </div>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <a href="">lucarodenas7@gmail.com</a>
-        </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

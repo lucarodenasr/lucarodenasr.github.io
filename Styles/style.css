@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
+  transition: background-color 0.8s ease;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(var(--white), var(--transparent));
 }
 
 section {
@@ -48,7 +48,7 @@ hr {
 header .container {
   background-color: var(--beige);
   width: max-content;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   border-bottom-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
@@ -120,7 +120,12 @@ h3 {
 
 #home {
   padding-top: 5rem;
-  width: 90%;
+  max-width: 60%;
+}
+
+#home div {
+  margin-bottom: 2rem;
+  width: max-content;
 }
 
 #proyectos {
@@ -128,11 +133,12 @@ h3 {
 }
 
 #contacto {
+  margin: 0;
   display: flex;
   justify-content: center;
   padding-top: 5rem;
   height: max-content;
-  padding-bottom: 25rem ;
+  padding-bottom: 25rem;
 }
 
 #imgProyecto {
@@ -185,6 +191,10 @@ h3 {
   border-bottom: 2px solid;
 }
 
+.yellow {
+  color: var(--dark-yellow);
+}
+
 /*RESPONSIVE*/
 
 @media (max-width: 700px) {
@@ -214,12 +224,4 @@ h3 {
   --beige: #efece1;
   --yellow: #e5d4a0;
   --dark-yellow: #928a6d;
-  /*EXTRA COLORS*/
-  --orange: #e28838;
-  --magenta: #c952ac;
-  --purple: #7822cc;
-  --dark-purple: #2b1a22;
-  --green: #a0b858;
-  --dark-green: #384f2c;
-  --blue: #66a3b1;
 }

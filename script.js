@@ -3,9 +3,9 @@ let p = document.getElementById("pProyecto")
 let date = document.getElementById("dateProyecto")
 
 const descripciones = {
-    'mannad': 'Aplicación móvil en React Native para la gestión de tareas colaborativas.',
-    'auto': 'Script en Python que automatiza procesos repetitivos y optimiza flujos de trabajo.',
-    'ajedrez': 'Juego de ajedrez interactivo desarrollado con JavaScript y diseño minimalista.'
+    'mannad': 'Aplicación móvil en React Native para la gestión de gastos e ingresos y agregar notas, pensado para usarlo en un proyecto personal.',
+    'auto': 'Pequeño programa para PC hecho en python para automatizar la eliminacion de archivos, mediante extension de archivo y seleccionando una carpeta.',
+    'ajedrez': 'Proyecto de Ajedrez online con estilo minimalista, Backend en PHP y Frontend en JavaScript.'
 };
 
 const dates = {
@@ -54,3 +54,20 @@ function showProject(id) {
         date.textContent = dates[id];
     }
 }
+
+const sectionProyectos = document.getElementById("proyectos");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        document.body.style.backgroundColor = "var(--beige)";
+      } else {
+        document.body.style.backgroundColor = "var(--white)";
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+observer.observe(sectionProyectos);

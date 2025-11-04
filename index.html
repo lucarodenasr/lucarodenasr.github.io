@@ -11,13 +11,9 @@
     <div class="grain"></div>
     <header>
       <div class="container">
-        <div>
-          <h1>Luca Ródenas</h1>
-          <p class="yellow">Software Developer</p>
-        </div>
         <nav>
           <ol>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Info</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ol>
@@ -26,19 +22,25 @@
     </header>
     <main>
       <section id="home" class="active">
+        <div>
+          <h1>Luca Ródenas</h1>
+          <p class="yellow">Software Developer</p>
+        </div>
         <p>
           Desarrollador Informático apasionado por la creación de soluciones y
           el desarrollo de software web y multiplataforma. Disciplinado y en
           aprendizaje continuo, capaz de adaptarme rapidamente a nuevas
           tecnologías
         </p>
-        <h3>SKILLS</h3>
-        <hr>
-        <p>Lenguajes de programación: Java, JavaScript, Python, PHP, C#</p>
-        <p>Frameworks: Spring Boot, Angular, Django</p>
-        <p>Desarrollo Web: HTML, CSS, React</p>
-        <p>Bases de Datos: MySQL, PostgreSQL, Firebase</p>
-        <p>Control de versiones: Git</p>
+        <div>
+          <h3>SKILLS</h3>
+          <hr />
+          <p>Java, JavaScript, Python, PHP, C#</p>
+          <p>Spring Boot, Angular, Django</p>
+          <p>HTML, CSS, React</p>
+          <p>MySQL, PostgreSQL, Firebase</p>
+          <p>Git</p>
+        </div>
       </section>
       <section id="proyectos">
         <div id="listaProyectos">
@@ -63,7 +65,7 @@
             <li>
               <a onclick="showProject('ajedrez')"
                 ><h2>Ajedrez</h2>
-                <p>JavaScript</p></a
+                <p>JS / PHP</p></a
               >
             </li>
             <hr />
@@ -72,7 +74,7 @@
         <div class="container">
           <p id="dateProyecto">2025</p>
           <img class="active" id="imgProyecto" src="Img/mannad.png" alt="" />
-          <p id="pProyecto"></p>
+          <p id="pProyecto">Aplicación móvil en React Native para la gestión de gastos e ingresos y agregar notas, pensado para usarlo en un proyecto personal.</p>
         </div>
       </section>
       <section id="contacto">

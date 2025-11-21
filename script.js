@@ -13,7 +13,8 @@ const dates = {
     'mannad': '2025',
     'auto': '2023',
     'ajedrez': '2024',
-    'oalarma': '2025'
+    'oalarma': '2025',
+    'logos': '2025',
 };
 
 function selectProjects(opt) {
@@ -49,7 +50,7 @@ function showProject(id) {
     if (descripciones[id]) {
         p.textContent = descripciones[id];
     } else {
-        p.textContent = 'Proyecto sin descripción disponible.';
+        p.textContent = 'Proximamente...';
     }
 
     if (dates[id]) {

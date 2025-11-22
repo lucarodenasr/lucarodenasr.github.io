@@ -5,8 +5,9 @@ let date = document.getElementById("dateProyecto")
 const descripciones = {
     'mannad': 'Aplicación móvil en React Native para la gestión de gastos e ingresos y agregar notas, pensado para usarlo en un proyecto personal.',
     'auto': 'Pequeño programa para PC hecho en python para automatizar la eliminacion de archivos, mediante extension de archivo y seleccionando una carpeta.',
-    'ajedrez': 'Proyecto de Ajedrez online con estilo minimalista, Backend en PHP y Frontend en JavaScript.',
-    'oalarma': 'Aplicación móvil en React Native para activar una alarma de una forma personalizada, pensado para usarlo en un proyecto personal.'
+    'ajedrez': 'Proyecto web de Ajedrez online con estilo minimalista, Backend en PHP y Frontend en JavaScript.',
+    'oalarma': 'Aplicación móvil desarrollada en Android Studio para activar una alarma de una forma personalizada, pensado para usarlo en un proyecto personal.',
+    'logos': 'Colección de logos diseñados para diferentes proyectos.',
 };
 
 const dates = {

@@ -1,0 +1,19 @@
+---
+import "../styles/navegador.css";
+const currentPath = Astro.url.pathname;
+---
+
+<img src="/logo.svg" class="logoNav" alt="Logo">
+<nav>
+  <ul>
+    <li class={currentPath === "/" ? "selected" : ""}>
+      <a href="/">Home</a>
+    </li>
+    <li class={currentPath === "/proyectos" ? "selected" : ""}>
+      <a href="/proyectos">Proyectos</a>
+    </li>
+    <li class={currentPath === "/contacto" ? "selected" : ""}>
+      <a href="/contacto">Contacto</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,45 @@
+---
+import Navegador from "../components/navegador.astro";
+import "../styles/index.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portafolio Luca</title>
+  </head>
+  <body>
+    <Navegador />
+    <hr />
+    <div class="bg-orange">
+      <h1>Luca Ródenas</h1>
+    </div>
+    <hr />
+    <div class="container-h">
+      <div class="item">
+        <p id="infoAbout">
+          Desarrollador Informático apasionado por la creación de soluciones y
+          el desarrollo de software web y multiplataforma. Disciplinado y en
+          aprendizaje continuo, capaz de adaptarme rapidamente a nuevas
+          tecnologías
+        </p>
+      </div>
+      <hr />
+      <div class="item">
+        <p>SKILLS</p>
+        <hr />
+        <ul class="container-v">
+          <li><b>BACKEND:</b> Java (Spring Boot)</li>
+          <li><b>FRONTEND:</b> Angular, React</li>
+          <li><b>WEB:</b> HTML, CSS, JavaScript</li>
+          <li><b>SQL:</b> MySQL, PostgreSQL</li>
+          <li><b>Control de versiones:</b> Git</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </body>
+</html>

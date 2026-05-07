@@ -1,0 +1,31 @@
+---
+import Navegador from "../components/navegador.astro";
+import "../styles/index.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Portafolio Luca</title>
+    <script src="/src/script.js"></script>
+  </head>
+  <body>
+    <Navegador />
+    <hr />
+    <div class="bg-orange">
+      <h1 style="padding-left: 20vw;">Proyectos</h1>
+    </div>
+    <hr />
+    <ul id="navProyectos"></ul>
+    <hr />
+    <div class="infoProyectos container-h" id="infoProyectos">
+      <img id="imgProyecto"/>
+      <hr />
+      <p id="descProyecto"></p>
+    </div>
+    <hr />
+  </body>
+</html>
